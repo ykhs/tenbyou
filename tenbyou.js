@@ -2,12 +2,12 @@
 
 $('#button').bind('click', function () {
 
-	loadImage('./4884805803_8bf7154a39_z.jpg')
+	loadImage(src)
 
-	function loadImage (data) {
+	function loadImage (src) {
 		$(document.body)
 			.prepend($('<img>')
-				.attr('src', data)
+				.attr('src', src)
 				.css('display', 'none')
 				.bind('load', onloadImage)
 		);
